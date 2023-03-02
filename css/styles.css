@@ -52,8 +52,10 @@ section {
 
 /* Titre */
 h1 {
-  font-size: 85px;
+  font-size: 75px;
   font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #FEFEFE;
 }
 
 h2 {
@@ -61,7 +63,7 @@ h2 {
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 60px;
   color: #FEFEFE;
   font-family: "Poppins", sans-serif;
 }
@@ -76,6 +78,7 @@ h3 {
 p{
   font-family: "Montserrat";
   color :#FEFEFE;
+  font-size: 20px;
 }
 
 /* Bouton */
@@ -154,11 +157,7 @@ nav div:nth-child(2) {
   height: 84%;
 }
 .hero h1 {
-  font-family: "Poppins", sans-serif;
-  color: #FEFEFE;
-  text-transform: uppercase;
   font-weight: 400;
-  font-size: 6em;
   margin: 0;
   margin-bottom: 30vh;
 }
@@ -185,7 +184,7 @@ nav div:nth-child(2) {
   background-size: 50vh;
 }
 
-.label img{
+.labelimg{
   width: 20%;
   height: 100%;
 }
@@ -194,7 +193,13 @@ nav div:nth-child(2) {
 
 .QuiSommesNousUN {
   background-color: #202020;
-  
+  display: flex;
+  gap: 20vh;
+}
+
+.textabout1{
+  width: 60%;
+  padding-right: 10vh;
 }
 
 /* QUI SOMMES NOUS 2 */
@@ -202,6 +207,10 @@ nav div:nth-child(2) {
   gap: 40px;
 }
 
+.textabout2{
+  width: 60%;
+  padding-left: 10vh;
+}
 
 
 .Numbers {
