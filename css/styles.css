@@ -7,7 +7,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #fefefe;
+  background-color: #171717;
 }
 
 img {
@@ -114,9 +114,12 @@ nav a {
 nav a:hover {
   font-weight: 700;
 }
+nav div:nth-child(1) {
+  width: 50%;
+}
 
 nav div:nth-child(2) {
-  width: 30%;
+  width: 50%;
 }
 
 /* === MAIN ===*/
@@ -143,7 +146,7 @@ nav div:nth-child(2) {
   font-family: "Montserrat", sans-serif;
   color: #FEFEFE;
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 87.7906px;
   margin: 0;
 }
@@ -163,6 +166,11 @@ nav div:nth-child(2) {
   font-weight: 700;
   font-size: 87.7906px;
   margin: 0;
+}
+
+#hero p {
+  color: white;
+  border: solid 1px ;
 }
 
 #drawing > div > div {
