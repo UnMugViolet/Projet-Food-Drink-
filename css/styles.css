@@ -53,7 +53,7 @@ section {
 /* Titre */
 h1 {
   font-size: 70px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h2 {
@@ -121,10 +121,15 @@ nav div:nth-child(2) {
 
 /* === MAIN ===*/
 #bg-image {
-  background-image: url(../images/images/bg-caption.jpg);
+  background-image: url(../images/ImgHero.png);
   height: 98vh;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#bg-image img{
+  width: 15%;
+  height: auto;
 }
 
 #hero {
