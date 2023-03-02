@@ -182,8 +182,8 @@ nav div:nth-child(2) {
 
 /* QUI SOMMES NOUS */
 
-#QuiSommesNous > div > div {
-  gap: 40px;
+#QuiSommesNous {
+  background-color: #202020;
 }
 
 #Numbers {
