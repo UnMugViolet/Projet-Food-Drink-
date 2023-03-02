@@ -260,6 +260,12 @@ nav div:nth-child(2) {
 
 
 /* Tableau */
+.contact{
+  width: 50%;
+}
+.map{
+  width: 50%;
+}
 input, textarea {
   background-color: whitesmoke;
   border: 0px;
