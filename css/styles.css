@@ -72,6 +72,10 @@ h3 {
   color: #FEFEFE;
 }
 
+p{
+  color :#FEFEFE;
+}
+
 /* Bouton */
 .first-cta {
   padding: 13px 15px;
@@ -276,7 +280,7 @@ footer ul {
   list-style: none;
 }
 footer a {
-  color: black;
+  color: #FEFEFE;
   transition: all 1s ease;
 }
 footer a:hover {
