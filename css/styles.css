@@ -50,6 +50,11 @@ section {
   padding-bottom: 70px;
 }
 
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
 /* Titre */
 h1 {
   font-size: 75px;
@@ -63,7 +68,7 @@ h2 {
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 700;
-  font-size: 55px;
+  font-size: 40px;
   color: #FEFEFE;
   font-family: "Poppins", sans-serif;
 }
@@ -71,7 +76,7 @@ h2 {
 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   color: #FEFEFE;
 }
 
@@ -223,67 +228,14 @@ nav div:nth-child(2) {
   margin: 0 auto;
 }
 
-.Numbers {
-  text-align: center;
-  justify-content: center;
-  gap: 17px;
-}
-.Numbers p {
-  margin: 0px 0px 40px 0;
-}
-.Numbers h3 {
-  margin-bottom: 0;
+.fournisseurstexte{
+  margin: 0 auto;
+  margin-bottom: 10vh;
 }
 
-.Project1 {
-  background-color: #4d383f;
-}
-.Project1 h3 {
-  color: #FEFEFE;
-}
-.Project1 p {
-  color: #FEFEFE;
-  margin-bottom: 90px;
-}
-.Project1 > div > div > div {
-  width: 50%;
-  gap: 40px;
-}
-.Project1 > div > div {
-  gap: 40px;
-}
+/* VALEURS */
 
-.Project2 p {
-  margin-bottom: 90px;
-}
-.Project2 > div > div > div {
-  width: 45%;
-  gap: 40px;
-}
-.Project2 > div > div {
-  gap: 40px;
-}
 
-.Buttons {
-  justify-content: center;
-  align-items: center;
-  gap: 73px;
-  margin-top: 73px;
-}
-.Buttons div {
-  transition: all 0.5s ease;
-}
-.Buttons div:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0px 0px 10px #4d383f);
-}
-
-.downloadcv {
-  margin: 20px 0px 0px 0px;
-}
-.downloadcv p {
-  margin-bottom: 60px;
-}
 
 /* Tableau */
 input, textarea {
@@ -292,11 +244,6 @@ input, textarea {
   padding: 20px;
   width: 100%;
   margin: 10px 0 10px 0;
-}
-
-.vertical-align {
-  display: flex;
-  align-items: center;
 }
 
 .tableau {
@@ -309,7 +256,6 @@ input, textarea {
 }
 
 .form {
-  padding-top: 30px;
   width: 48%;
 }
 
