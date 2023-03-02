@@ -131,7 +131,6 @@ button:hover {
 }
 
 /* === HEADER ===*/
-
 nav {
   align-items: center;
   display: flex;
@@ -170,7 +169,7 @@ nav div:nth-child(2) {
   padding: 0;
 }
 
-.bg-image img{
+.header img{
   width: 15%;
   height: auto;
   margin: 0;
@@ -242,6 +241,12 @@ nav div:nth-child(2) {
   width: 60%;
   padding-left: 10vh;
 }
+
+.justify{
+  display: flex;
+  justify-content: center;
+}
+
 
 /* FOURNISSEURS ET VALEURS */
 
