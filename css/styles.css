@@ -287,8 +287,9 @@ footer a:hover {
   font-weight: 700;
 }
 footer .logo-footer {
-  width: 10%;
+  width: 7%;
   margin-top: 100px;
+  margin-bottom: 75px;
 }
 footer .social-network {
   width: 14%;
