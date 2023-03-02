@@ -63,7 +63,7 @@ h2 {
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 55px;
   color: #FEFEFE;
   font-family: "Poppins", sans-serif;
 }
@@ -71,7 +71,7 @@ h2 {
 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 40px;
   color: #FEFEFE;
 }
 
@@ -216,7 +216,12 @@ nav div:nth-child(2) {
   padding-left: 10vh;
 }
 
-/*  */
+/* FOURNISSEURS */
+
+.fournisseurs{
+  background-color: #202020;
+  margin: 0 auto;
+}
 
 .Numbers {
   text-align: center;
