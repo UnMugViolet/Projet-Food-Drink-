@@ -266,7 +266,7 @@ nav div:nth-child(2) {
 
 /* Tableau */
 .contact{
-  width: 50%;
+  width: 40%;
 }
 .map{
   width: 50%;
@@ -289,7 +289,7 @@ input, textarea {
 }
 
 .form {
-  width: 48%;
+  width: 40%; 
 }
 
 /* === FOOTER ===*/
