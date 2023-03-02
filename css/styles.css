@@ -7,7 +7,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #171717;
+  background-color: #fefefe;
 }
 
 img {
@@ -53,11 +53,10 @@ section {
 /* Titre */
 h1 {
   font-size: 70px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h2 {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 700;
@@ -114,25 +113,17 @@ nav a {
 nav a:hover {
   font-weight: 700;
 }
-nav div:nth-child(1) {
-  width: 50%;
-}
 
 nav div:nth-child(2) {
-  width: 50%;
+  width: 30%;
 }
 
 /* === MAIN ===*/
 #bg-image {
-  background-image: url(../images/ImgHero.png);
-  height: 100vh;
+  background-image: url(../images/images/bg-caption.jpg);
+  height: 98vh;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-#bg-image img{
-  width: 15%;
-  height: auto;
 }
 
 #hero {
@@ -146,7 +137,7 @@ nav div:nth-child(2) {
   font-family: "Montserrat", sans-serif;
   color: #FEFEFE;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 87.7906px;
   margin: 0;
 }
@@ -166,11 +157,6 @@ nav div:nth-child(2) {
   font-weight: 700;
   font-size: 87.7906px;
   margin: 0;
-}
-
-#hero p {
-  color: white;
-  border: solid 1px ;
 }
 
 #drawing > div > div {
@@ -311,7 +297,6 @@ h1 {
 }
 
 h2 {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 700;
