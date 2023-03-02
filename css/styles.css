@@ -169,6 +169,19 @@ nav div:nth-child(2) {
   padding: 0.85em;
 }
 
+/* LABEL */
+
+#label{
+  background-size: 50vh;
+}
+
+#label img{
+  width: 20%;
+  height: 100%;
+}
+
+/* QUI SOMMES NOUS */
+
 #QuiSommesNous > div > div {
   gap: 40px;
 }
