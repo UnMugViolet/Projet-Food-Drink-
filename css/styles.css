@@ -13,11 +13,15 @@ body {
 /* COULEURS ET FONTS */
 
 :root{
-  dark-black: #171717;
-  medium-dark: #202020;
-  onyx: #3B3B3B;
-  button: #B89959;
-  button-hover: #857043;
+  --dark-black: #171717;
+  --medium-dark: #202020;
+  --onyx: #3B3B3B;
+  --small-white: #FEFEFE;
+  --full-white: #FFFFFF;
+  --button: #B89959;
+  --button-hover: #857043;
+  --poppins: "Poppins",sans-serif;
+  --montserrat: "Montserrat",sans-serif;
 }
 
 /* BALISES */
@@ -70,9 +74,9 @@ section {
 /* Titre */
 h1 {
   font-size: 75px;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--poppins);
   text-transform: uppercase;
-  color: #FEFEFE;
+  color: var(--small-white);
 }
 
 h2 {
@@ -81,56 +85,56 @@ h2 {
   width: fit-content;
   font-weight: 700;
   font-size: 40px;
-  color: #FEFEFE;
-  font-family: "Poppins", sans-serif;
+  color: var(--small-white);
+  font-family: var(--poppins);
 }
 
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--poppins);
   font-weight: 700;
   font-size: 30px;
-  color: #FEFEFE;
+  color: var(--small-white);
 }
 
 p{
-  font-family: "Montserrat";
-  color :#FEFEFE;
+  font-family: var(--montserrat);
+  color :var(--small-white);
   font-size: 20px;
 }
 
 /* Bouton */
 .first-cta {
   padding: 13px 15px;
-  background-color: #B89959;
-  color: #FFFFFF;
+  background-color: var(--button);
+  color: var(--full-white);
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .first-cta:hover {
-  background-color: #857043;
-  color: #FFFFFF;
+  background-color: var(--button-hover);
+  color: var(--full-white);
   padding: 0.85em;
 }
 
 .second-cta {
   padding: 13px 15px;
-  background-color: #B89959;
-  color: #FFFFFF;
+  background-color: var(--button);
+  color: var(--full-white);
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .second-cta:hover {
-  background-color: #857043;
-  color: #FFFFFF;
+  background-color: var(--button-hover);
+  color: var(--full-white);
   padding: 0.85em;
 }
 
 button{
   padding: 13px 15px;
   background-color: #B89959;
-  color: #FFFFFF;
+  color: var(--full-white);
   border-radius: 8px;
   transition: all 0.3s ease;
   
@@ -138,7 +142,7 @@ button{
 
 button:hover {
   background-color: #857043;
-  color: #FFFFFF;
+  color: var(--full-white);
 }
 
 /* === HEADER ===*/
@@ -154,7 +158,7 @@ nav ul {
 
 
 nav a {
-  color: #FEFEFE;
+  color: var(--small-white);
   text-transform: uppercase;
   position: absolute;
 }
@@ -311,7 +315,7 @@ footer ul {
   list-style: none;
 }
 footer a {
-  color: #FEFEFE;
+  color: var(--small-white);
   transition: all 1s ease;
 }
 footer a:hover {
