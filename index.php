@@ -63,9 +63,9 @@
 
     <!-- QUI SOMMES NOUS -->
 
-    <section class="QuiSommesNousUN">
+    <section class="presentation">
         <div class="container flex-container vertical-align">
-            <div class="textabout1">
+            <div class="textpresentation">
                 <h2>Qui sommes-nous ?</h2><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adi elit, sed do eiusmod tempor incclassclassunt ut labore et dolore magna aliqua. </p>
             </div>
@@ -77,12 +77,12 @@
 
     <!-- QUI SOMMES NOUS 2 -->
 
-    <section class="QuiSommesNousDEUX">
+    <section class="explication">
         <div class="container flex-container vertical-align">
             <div class="imgAbout">
                 <img src="images/QuiSommesNous.png" alt="QuiSommesNous">
             </div>
-            <div class="textabout2">
+            <div class="textexplication">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incclassclassunt ut labore et dolore magna aliqua. </p>
             </div>
             
@@ -170,7 +170,7 @@
         <div class=" container vertical-align logo-footer">
             <a href="#"><img src="./images/food-and-drink.svg" alt="#"></a>
         </div>
-        <div class="container ">
+        <div class="container textfooter">
             <ul class="flex-container vertical-align">
                 <li>
                     <a href="#">Mentions Légales</a>
@@ -187,17 +187,24 @@
                 <li>
                     <a href="callto:+33618784002">06 18 78 40 02</a>
                 </li>
-                <li>
-                    <a href="./404.html">404 ?</a>
-                </li>
             </ul>
             <hr>
         </div>
         <div class="container vertical-align social-network">
-                <a href="#"> <img src="./images/images/Behance.png" alt=""></a>
-                <a href="#"> <img src="./images/images/Linkedin.png" alt=""></a>
-                <a href="#"> <img src="./images/images/Insta.png" alt=""></a>
-                <a href="#"> <img src="./images/images/Twitter.png" alt=""></a>
+                <ul>
+                    <li>
+                        <a href="#"> <img src="./images/images/Behance.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="./images/images/Linkedin.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="./images/images/Insta.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="./images/images/Twitter.png" alt=""></a>
+                    </li>
+                </ul>
         </div>
 
         <div class="container text-center">

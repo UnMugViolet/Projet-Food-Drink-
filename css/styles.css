@@ -36,6 +36,32 @@ a {
   color: rgba(0, 0, 0, 0);
 }
 
+footer {
+  align-items: center;
+}
+
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+
+/* Classes fonctionnelles */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
 .vertical-align {
   display: flex;
   align-items: center;
@@ -50,25 +76,12 @@ a {
   justify-content: center;
 }
 
-/* Classes fonctionnelles */
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-section {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-.vertical-align {
-  display: flex;
-  align-items: center;
+input, textarea {
+  background-color: var(--small-white);
+  border: 0px;
+  padding: 20px;
+  width: 100%;
+  margin: 10px 0 10px 0;
 }
 
 /* Titre */
@@ -197,6 +210,7 @@ nav div:nth-child(2) {
   align-items: center;
   height: 84%;
 }
+
 .hero h1 {
   font-weight: 400;
   margin: 0;
@@ -232,13 +246,13 @@ nav div:nth-child(2) {
 
 /* QUI SOMMES NOUS 1*/
 
-.QuiSommesNousUN {
+.presentation {
   background-color: var(--medium-dark);
   display: flex;
   gap: 20vh;
 }
 
-.textabout1{
+.textpresentation{
   width: 60%;
   padding-right: 10vh;
 }
@@ -248,11 +262,11 @@ nav div:nth-child(2) {
 }
 
 /* QUI SOMMES NOUS 2 */
-.QuiSommesNousDEUX {
+.explication {
   gap: 40px;
 }
 
-.textabout2{
+.textexplication{
   width: 60%;
   padding-left: 10vh;
 }
@@ -286,13 +300,7 @@ nav div:nth-child(2) {
 .map{
   width: 50%;
 }
-input, textarea {
-  background-color: var(--small-white);
-  border: 0px;
-  padding: 20px;
-  width: 100%;
-  margin: 10px 0 10px 0;
-}
+
 
 .tableau {
   display: grid;
@@ -308,9 +316,7 @@ input, textarea {
 }
 
 /* === FOOTER ===*/
-footer {
-  align-items: center;
-}
+
 footer ul {
   list-style: none;
 }
@@ -337,4 +343,6 @@ footer .social-network {
   gap: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
+  position: fixed;
 }
+
