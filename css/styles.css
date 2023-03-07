@@ -10,6 +10,18 @@ body {
   background-color: #171717;
 }
 
+/* COULEURS ET FONTS */
+
+:root{
+  dark-black: #171717;
+  medium-dark: #202020;
+  onyx: #3B3B3B;
+  button: #B89959;
+  button-hover: #857043;
+}
+
+/* BALISES */
+
 img {
   width: 100%;
   display: block;
