@@ -1,4 +1,4 @@
-AuthUserFile .htpasswd
+AuthUserFile /home/.htpasswd
 AuthType Basic
 AuthName "Pour accéder au site merci d'entrer votre nom d'utilisateur est un mot de passe valide"
 Require valid-user
