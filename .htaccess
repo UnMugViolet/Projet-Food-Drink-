@@ -1,4 +1,4 @@
-AuthUserFile D:\Logiciels\Développement\Poroject food and drink\Projet-Food-Drink-\protection\.htpasswd
+AuthUserFile D:\Logiciels\Développement\Poroject food and drink\Projet-Food-Drink-\.htpasswd
 AuthType Basic
 AuthName "Pour accéder au site merci d'entrer votre nom d'utilisateur est un mot de passe valide"
 Require valid-user
