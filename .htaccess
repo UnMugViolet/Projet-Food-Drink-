@@ -1,4 +1,4 @@
 AuthUserFile ./.htpasswd
 AuthType Basic
-AuthName "My restricted Area"
+AuthName "Pour accéder au site merci de rentrer votre nom d'utilisateur est un mot de passe valide"
 Require valid-user
