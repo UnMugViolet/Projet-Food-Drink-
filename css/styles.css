@@ -33,7 +33,7 @@ img {
 
 a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0);
+  color: var(--full-white);
 }
 
 footer {
@@ -62,10 +62,6 @@ section {
   align-items: center;
 }
 
-.vertical-align {
-  display: flex;
-  align-items: center;
-}
 
 .text-center {
   text-align: center;
@@ -159,6 +155,7 @@ button:hover {
 }
 
 /* === HEADER ===*/
+
 nav {
   align-items: center;
   display: flex;
@@ -186,6 +183,43 @@ nav div:nth-child(1) {
 
 nav div:nth-child(2) {
   width: 50%;
+}
+
+/* Responsive burger */
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: #48435C;
+        height: 220px;
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
 }
 
 /* === MAIN ===*/
@@ -320,18 +354,22 @@ nav div:nth-child(2) {
 footer ul {
   list-style: none;
 }
+
 footer a {
   color: var(--small-white);
   transition: all 1s ease;
 }
+
 footer a:hover {
   font-weight: 700;
 }
+
 footer .logo-footer {
   width: 7%;
   margin-top: 100px;
   margin-bottom: 75px;
 }
+
 footer .social-network {
   width: 14%;
   gap: 20px;
@@ -343,6 +381,9 @@ footer .social-network {
   gap: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
-  position: fixed;
 }
 
+.textfooter li{
+  width: 20vw;
+  text-align: center;
+}

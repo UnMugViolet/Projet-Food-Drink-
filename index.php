@@ -6,13 +6,23 @@
    <meta name ="description" content="Description de la page">
 
    <!--Feuille de CSS-->
-   <link rel="stylesheet" href="css/styles.css">
-
-
+   
+   
    <link rel="icon" href="favicon.ico">
+   
+   <!-- BOOTSTRAP -->
+   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+   <link rel="stylesheet" href="css/styles.css">
 
    <!--Fonts-->
 
+   <!-- POPPINS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+   <!-- MONTSERRAT -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -21,25 +31,49 @@
 <body>
     <section class="bg-image header">
         <header>
+            <!-- <nav class=" container navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <img src="images/food-and-drink.svg" alt="">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav> -->
             <nav class="container">
-                    <div class="logo">
-                        <!-- logo du site -->
-                        <img src="images/food-and-drink.svg" alt="LogoFoodAndDrink">
-                    </div>
-                        <!-- NAV HOVER -->
-                    <div>
-                        <ul class="flex-container">
-                            <li>
-                                <a href="#QuiSommesNous">Qui sommes nous ?</a>
-                            </li>
-                            <li>
-                                <a href="#Buttons">Nos Menus</a>
-                            </li>
-                            <li>
-                                <a href="#Project1">Nous trouver</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="logo">
+                    <!-- logo du site -->
+                    <img src="images/food-and-drink.svg" alt="LogoFoodAndDrink">
+                </div>
+                    <!-- NAV HOVER -->
+                <div>
+                    <ul class="flex-container">
+                        <li>
+                            <a href="#QuiSommesNous">Qui sommes nous ?</a>
+                        </li>
+                        <li>
+                            <a href="#Buttons">Nos Menus</a>
+                        </li>
+                        <li>
+                            <a href="#Project1">Nous trouver</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>        
         </header>
         <section class="hero">
             <div>
@@ -171,7 +205,7 @@
             <a href="#"><img src="./images/food-and-drink.svg" alt="#"></a>
         </div>
         <div class="container textfooter">
-            <ul class="flex-container vertical-align">
+            <ul class="vertical-align flex-container">
                 <li>
                     <a href="#">Mentions Légales</a>
                 </li>
@@ -188,8 +222,8 @@
                     <a href="callto:+33618784002">06 18 78 40 02</a>
                 </li>
             </ul>
-            <hr>
         </div>
+        <hr class="container">
         <div class="container vertical-align social-network">
                 <ul>
                     <li>
