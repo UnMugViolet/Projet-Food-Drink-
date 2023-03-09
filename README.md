@@ -46,8 +46,9 @@ La création de ce site sera donc un hymne à la gloire des gueuletons raffinés
 
 
 
-Pour accomplir notre missions nous allons utiliser des langages de programmation comme le : 
+Pour accomplir notre mission nous allons utiliser des langages de programmation comme le : 
 PHP / Javascript / HTML / CSS
+
 
 
 
