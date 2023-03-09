@@ -31,6 +31,7 @@
 <body>
     <section class="bg-image header">
         <header>
+            <!-- NAV BOOTSTRAP -->
             <!-- <nav class=" container navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <img src="images/food-and-drink.svg" alt="">

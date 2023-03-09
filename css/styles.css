@@ -186,7 +186,7 @@ nav div:nth-child(2) {
 }
 
 /* Responsive burger */
-@media all and (max-width: 991px)
+/* @media all and (max-width: 991px)
 {
     nav
     {
@@ -220,7 +220,7 @@ nav div:nth-child(2) {
     #toggle:checked + .main_pages {
         display: flex;
     }
-}
+} */
 
 /* === MAIN ===*/
 .bg-image {
