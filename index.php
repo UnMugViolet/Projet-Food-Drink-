@@ -1,3 +1,33 @@
+<?php
+    function afficher_les_menus($menus) {
+        $result = "";
+          foreach($menus as $menu) {
+            $menu_name = $menu['title'];
+            $entree = $menu['entrée'];
+            $plat = $menu['plat'];
+            $dessert = $menu['dessert'];
+        
+            $html = <<<TEXT
+            <div>
+              <h2>$menu_name</h2>
+              <ul>
+                <li>$entree</li>
+                <li>$plat</li>
+                <li>$dessert</li>
+              </ul>
+            </div>
+            TEXT;
+        
+          $result .= $html;
+          }
+          return $result;
+        }
+
+        $result[0];
+        $result[1];
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +64,7 @@
         <header>
             <!-- NAV BOOTSTRAP MENU BURGER -->
             <nav class=" container navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
+                <div class="container-fluid logo">
                     <img src="images/food-and-drink.svg" alt="">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -57,12 +87,15 @@
                 </div>
               </nav>
             <nav class="container">
-                <div class="logo">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="images/food-and-drink.svg" alt="LogoFoodAndDrink">
+                    </div>
                     <!-- logo du site -->
-                    <img src="images/food-and-drink.svg" alt="LogoFoodAndDrink">
                 </div>
                     <!-- NAV HOVER -->
                 <div>
+                    <div class="col-12 col-sm-8 col-lg-4"></div>
                     <ul class="flex-container">
                         <li>
                             <a href="#QuiSommesNous">Qui sommes nous ?</a>
@@ -79,56 +112,60 @@
         </header>
         <section class="hero">
             <div>
-                <h1>FOOD AND DRINK</h1>
+                <h1>Food and drink</h1>
                 <a href="#">Des questions ?</a>
             </div>
         </section>
     </section>
 
-    <section class ="label container flex-container">
-        <div class="labelimg">
-            <a href="https://www.tripadvisor.fr/" target="_blank"><img src="images/Trip advisor B&W 2.png" alt="Trip_Advisor"></a>
+    <section class="container">
+        <div class="row mx-4 gx-4">
+            <div class="col-12 col-lg-4 my-4">
+                <a class=""  href="https://www.tripadvisor.fr/" target="_blank"><img src="images/Trip advisor B&W 2.png" alt="Trip_Advisor"></a>
+            </div>
+            <div class="col-12 col-lg-4 my-4">
+                <a class="" href="https://guide.michelin.com/fr/fr" target="_blank"><img src="images/Logo_Michelin 1.png" alt="Logo_Michelin"></a>
+            </div>
+            <div class="col-12 col-lg-4 my-4">
+                <a class="" href="https://fr.gaultmillau.com/" target="_blank"><img src="images/Gault_milaut.png" alt="Gault_milaut"></a>
+            </div>
         </div>
-        <div class="labelimg">
-            <a href="https://guide.michelin.com/fr/fr" target="_blank"><img src="images/Logo_Michelin 1.png" alt="Logo_Michelin"></a>
-        </div>
-        <div class="labelimg">
-            <a href="https://fr.gaultmillau.com/" target="_blank"><img src="images/Gault_milaut.png" alt="Gault_milaut"></a>
-        </div>
+        
     </section>
 
     <!-- QUI SOMMES NOUS -->
 
-    <section class="presentation">
-        <div class="container flex-container vertical-align">
-            <div class="textpresentation">
+    <section class="container-presentation-light">
+        <div class="container flex-container vertical-align ">
+            <div class="text-left">
                 <h2>Qui sommes-nous ?</h2><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adi elit, sed do eiusmod tempor incclassclassunt ut labore et dolore magna aliqua. </p>
             </div>
-            <div class="imgAbout">
+            <div>
                 <img src="images/QuiSommesNous.png" alt="QuiSommesNous">
             </div>
         </div>
     </section>
 
-    <!-- QUI SOMMES NOUS 2 -->
+    <!-- NOS SPECIALITÉS -->
 
-    <section class="explication">
+    <section class="container-presentation-dark">
         <div class="container flex-container vertical-align">
-            <div class="imgAbout">
+            <div>
                 <img src="images/QuiSommesNous.png" alt="QuiSommesNous">
             </div>
-            <div class="textexplication">
+            <div class="text-right">
+                <h2>Nos spécialités</h2><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incclassclassunt ut labore et dolore magna aliqua. </p>
             </div>
             
         </div>
     </section>
 
-    <section class ="fournisseursValeurs">
+    <section class ="fournisseursValeursLight">
         
         <div class="container">
-            <h2 class="fournisseursValeursTexte">Nos Fournisseurs</h2>
+            <h2 class=" margin-title-supplier text-center">Nos Fournisseurs</h2>
            <div class="label flex-container">
                 <div>
                     <a href="https://www.maisongesbert.com/web/" target="_blank"><img src="images/Gesbert B&W.png" alt="Logo Gesbert"></a>
@@ -146,28 +183,64 @@
 
     <!-- Menu  -->
 
-    <section class="container">
-        
+    <section class="container-presentation-dark">
+        <div class="container flex-container vertical-align">
+            <div>
+                <img src="images/QuiSommesNous.png" alt="QuiSommesNous">
+            </div>
+            <div class="text-right">
+                <?php
+                    echo afficher_les_menus($menus);
+                ?>
+            </div>
+            
+        </div>
     </section>
+
+    <!-- Menu2 -->
+
+    <section class="container-presentation-light">
+        <div class="container flex-container vertical-align ">
+            <div class="text-left">
+                <h2>Menu 2</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adi elit, sed do eiusmod tempor incclassclassunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div>
+                <img src="images/QuiSommesNous.png" alt="QuiSommesNous">
+            </div>
+        </div>
+    </section>
+
 
     <!-- VALEURS -->
 
     <section class="fournisseursValeurs">
         <div class="container">
-            <h2 class="fournisseursValeursTexte">Nos Valeurs</h2>
+            <h2 class="margin-title-values text-center">Nos Valeurs</h2>
             <div class="label flex-container">
-                <div class="vertical-align">
-                    <img src="images/Gesbert B&W.png" alt="Logo Gesbert">
+                
+                <div class=" container flex-container">
+                    <div class="icons-our-values">
+                        <img src="https://api.iconify.design/ic:round-groups.svg?color=%23ffffff" alt="Une famille">
+                        <p class="text-center">Géré en famille</p>
+                    </div>
+                    <div class="icons-our-values">
+                        <img src="https://api.iconify.design/ic:twotone-self-improvement.svg?color=%23ffffff" alt="Zen">
+                        <p class="text-center">Une équipe zen</p>
+                    </div>
+
+                    <div class="icons-our-values">
+                        <img src="https://api.iconify.design/ic:sharp-room-service.svg?color=%23ffffff" alt="La cuisine">
+                        <p class="text-center">Un service rapide</p>
+                    </div>
+
+                    <div class="icons-our-values">
+                        <img src="https://api.iconify.design/iconoir:vegan.svg?color=%23ffffff" alt="Vegan">
+                        <p class="text-center">Et Vegan !</p>
+                    </div>
+                 
                 </div>
-                <div>
-                    <img src="images/Ferme B&W.png" alt="Logo Ferme">
-                </div>
-                <div>
-                    <img src="images/Jardin B&W.png" alt="Logo Jardin">
-                </div>
-                <div>
-                    <img src="images/Jardin B&W.png" alt="Logo Jardin">
-                </div>
+                
             </div>
         </div>
     </section>
@@ -194,7 +267,7 @@
                     <textarea rows="12" type="text" class="fname" placeholder="Message"></textarea>
                 </div>
                 <div class="justify">
-                    <button type="submit" class="submit" class="first-cta">Envoyer</button>
+                    <button type="submit" class="first-cta submit">Envoyer</button>
                 </div>
         </form>
         <div class="map justify vertical-align">
@@ -226,22 +299,6 @@
             </ul>
         </div>
         <hr class="container">
-        <div class="container vertical-align social-network">
-                <ul>
-                    <li>
-                        <a href="#"> <img src="./images/images/Behance.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"> <img src="./images/images/Linkedin.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"> <img src="./images/images/Insta.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"> <img src="./images/images/Twitter.png" alt=""></a>
-                    </li>
-                </ul>
-        </div>
 
         <div class="container text-center">
             <p>Tous droits réservés - © 2023 Food & Drinks</p>
