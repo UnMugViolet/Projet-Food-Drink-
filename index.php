@@ -1,30 +1,58 @@
 <?php
     function afficher_les_menus($menus) {
-        $result = "";
-          foreach($menus as $menu) {
-            $menu_name = $menu['title'];
-            $entree = $menu['entrée'];
-            $plat = $menu['plat'];
-            $dessert = $menu['dessert'];
-        
-            $html = <<<TEXT
-            <div>
-              <h2>$menu_name</h2>
-              <ul>
-                <li>$entree</li>
-                <li>$plat</li>
-                <li>$dessert</li>
-              </ul>
-            </div>
-            TEXT;
-        
-          $result .= $html;
-          }
-          return $result;
+        $pair = 0;
+        foreach($menus as $menu) {
+          $menu_name = $menu['title'];
+          $entree = $menu['Entree'];
+          $plat = $menu['Plat'];
+          $dessert = $menu['Dessert'];
+          $boisson = $menu['Boisson'];
+          $prix = $menu['Prix'];
+      
+          $image = " <div>
+                        <img src='images/QuiSommesNous.png' alt='QuiSommesNous'>
+                    </div>";
+      
+          if($pair % 2) {
+          $html = <<<TEXT
+                <section class="container-presentation-dark">
+                    <div class="container flex-container vertical-align">
+                        $image
+                        <div class="text-right">
+                            <h2>$menu_name</h2><br><br>
+                            <p>$entree</p><br>
+                            <p>$plat</p><br>
+                            <p>$dessert</p><br>
+                            <p>$boisson</p><br><br>
+                            <p>$prix</p><br>
+                        </div>
+                        
+                    </div>
+            </section>
+          TEXT;
+      } else {
+          $html = <<<TEXT
+                <section class="container-presentation-light">
+                    <div class="container flex-container vertical-align ">
+                        <div class="text-left">
+                            <h2>$menu_name</h2><br><br>
+                            <p>$entree</p><br>
+                            <p>$plat</p><br>
+                            <p>$dessert</p><br>
+                            <p>$boisson</p><br><br>
+                            <p>$prix</p><br>
+                        </div>
+                        $image
+                    </div>
+            </section>
+          TEXT;
+      }
+      
+        echo $html;
+        $pair++;
         }
-
-        $result[0];
-        $result[1];
+      
+      }
 ?>
 
 
@@ -162,7 +190,7 @@
         </div>
     </section>
 
-    <section class ="fournisseursValeursLight">
+    <section class ="container-Light">
         
         <div class="container">
             <h2 class=" margin-title-supplier text-center">Nos Fournisseurs</h2>
@@ -182,34 +210,11 @@
     </section>
 
     <!-- Menu  -->
-
-    <section class="container-presentation-dark">
-        <div class="container flex-container vertical-align">
-            <div>
-                <img src="images/QuiSommesNous.png" alt="QuiSommesNous">
-            </div>
-            <div class="text-right">
                 <?php
-                    echo afficher_les_menus($menus);
+                    afficher_les_menus($menus);
                 ?>
-            </div>
-            
-        </div>
-    </section>
 
-    <!-- Menu2 -->
-
-    <section class="container-presentation-light">
-        <div class="container flex-container vertical-align ">
-            <div class="text-left">
-                <h2>Menu 2</h2><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adi elit, sed do eiusmod tempor incclassclassunt ut labore et dolore magna aliqua. </p>
-            </div>
-            <div>
-                <img src="images/QuiSommesNous.png" alt="QuiSommesNous">
-            </div>
-        </div>
-    </section>
+    
 
 
     <!-- VALEURS -->
@@ -247,31 +252,33 @@
 
 
     <!-- FORMULAIRE -->
-    <section class=" container flex-container">
-        <form class="container contact"action="#">
-            <h2>Nous contacter</h2>
-            <div class="flex-container vertical-align ">
-                <div class="form">
-                    <input type="text" class="fname" placeholder="First Name">
-                </div>
-                <div class="form">
-                    <input type="text" class="lname" placeholder="Name">
-                </div>
-            </div>
-                <div>
-                    <div>
-                        <input type="email" class="fname" placeholder="E-mail">
+    <section class="container-Light">
+        <div class="container flex-container">
+            <form class="container contact"action="#">
+                <h2>Nous contacter</h2>
+                <div class="flex-container vertical-align ">
+                    <div class="form">
+                        <input type="text" class="fname" placeholder="First Name">
+                    </div>
+                    <div class="form">
+                        <input type="text" class="lname" placeholder="Name">
                     </div>
                 </div>
-                <div>
-                    <textarea rows="12" type="text" class="fname" placeholder="Message"></textarea>
-                </div>
-                <div class="justify">
-                    <button type="submit" class="first-cta submit">Envoyer</button>
-                </div>
-        </form>
-        <div class="map justify vertical-align">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.050224017474!2d-1.682775584855528!3d48.10926686111223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede336647100f%3A0x705cb7733a64bcce!2s3%20Rue%20de%20la%20Chalotais%2C%2035000%20Rennes!5e0!3m2!1sfr!2sfr!4v1677765739722!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div>
+                        <div>
+                            <input type="email" class="fname" placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div>
+                        <textarea rows="12" type="text" class="fname" placeholder="Message"></textarea>
+                    </div>
+                    <div class="justify">
+                        <button type="submit" class="first-cta submit">Envoyer</button>
+                    </div>
+            </form>
+            <div class="map justify vertical-align">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.050224017474!2d-1.682775584855528!3d48.10926686111223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede336647100f%3A0x705cb7733a64bcce!2s3%20Rue%20de%20la%20Chalotais%2C%2035000%20Rennes!5e0!3m2!1sfr!2sfr!4v1677765739722!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
 
@@ -283,9 +290,6 @@
             <ul class="vertical-align flex-container">
                 <li>
                     <a href="#">Mentions Légales</a>
-                </li>
-                <li>
-                    <a href="#">Politique de confidentialité</a>
                 </li>
                 <li>
                     <a href="#">Plan du site</a>
