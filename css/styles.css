@@ -162,12 +162,10 @@ nav a {
   text-transform: uppercase;
 }
 
-nav a:hover {
-  font-weight: 700;
-}
 
 nav div:nth-child(2) {
   width: 50%;
+  display: inline-flex;
 }
 
 .logo-container{
@@ -364,9 +362,11 @@ footer p{
 /* ------------------------------------------RESPONSIVE TABLET----------------------------------------------- */
 /* Typography */
 
-@media screen (max-width : 1250px)
+@media screen and(max-width : 1250px)
 {
-  
+  .margin-title-supplier{
+    margin-bottom: 1vh;
+  }
 }
 
 
@@ -374,9 +374,18 @@ footer p{
 /* ------------------------------------------RESPONSIVE MOBILE----------------------------------------------- */
 /* Typography */
 
+@media screen and(max-width : 500px)
+{
+  .margin-title-supplier{
+    margin-bottom: 1vh;
+  }
+}
+
 /* Responsive burger */
 @media all and (max-width: 500px)
 {
+
+  
     nav
     {
         height: 60px;
@@ -386,7 +395,7 @@ footer p{
     {
         display: none;
         flex-direction: column;
-        background: #48435C;
+        background: #ffff;
         height: 220px;
     }
  

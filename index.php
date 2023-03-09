@@ -66,7 +66,7 @@
    <!--Feuille de CSS-->
    
    
-   <link rel="icon" href="favicon.ico">
+   <link rel="icon" type="image/x-icon" href="./images/favicon.png">
    
    <!-- BOOTSTRAP -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
@@ -94,34 +94,35 @@
             <nav class=" container navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid logo">
                     <img src="images/food-and-drink.svg" alt="">
+                </div>
+                <div>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#QuiSommesNous">Qui sommes nous ?</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
+                        <a class="nav-link" href="#Buttons">Nos Menus</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="#Project1">Nous trouver</a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </nav>
+              <!-- 
             <nav class="container">
                 <div class="logo-container">
                     <div class="logo">
                         <img src="images/food-and-drink.svg" alt="LogoFoodAndDrink">
                     </div>
-                    <!-- logo du site -->
+                    
                 </div>
-                    <!-- NAV HOVER -->
+                    
                 <div>
                     <div class="col-12 col-sm-8 col-lg-4"></div>
                     <ul class="flex-container">
@@ -136,7 +137,8 @@
                         </li>
                     </ul>
                 </div>
-            </nav>        
+            </nav>  
+             -->
         </header>
         <section class="hero">
             <div>
